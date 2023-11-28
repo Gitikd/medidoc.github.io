@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediDoc.com</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header start -->
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span id="logo"><img src="Images/MediDoc Logo.png" alt="website logo"></span>MediDoc</a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#book">Add</a>
+            <a href="#packages">Stock</a>
+            <a href="#services">Services</a>
+            <a href="#gallery">Sales</a>
+            <a href="#review">Supplier</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+    <!-- header end -->
+    <!-- login form container -->
+
+    <div class="login-form-container">
+
+        <i class="fas fa-close" id="form-close"></i>
+
+        <form action="/backend/Home.php" method="post">
+            <h3>login</h3>
+            <input type="text" class="box" placeholder="Enter your email">
+            <input type="password" class="box" placeholder="Enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember</label>
+            <p>forgot password? <a href="#">click here</a></p>
+            <p>don't have and account? <a href="#">register now</a></p>
+        </form>
+
+    </div>
+    <!-- home section start -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>health is wealth</h3>
+            <p>it is no measure of health to be well adjusted to a profoundly sick society .</p>
+            <a href="#gallery" class="btn">discover more</a>
+        </div>
+
+        <div class="video-container">
+            <video src="\Images\HeartBeat.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+
+    </section>
+    <!-- home section end -->
+    <!-- book section start -->
+
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>A</span>
+            <span>d</span>
+            <span>d</span>
+        </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="Images/medicine.jpg" alt="error">
+            </div>
+<!-- Backend Book Now -->
+            <form action="book_form.php">
+                <div class="inputBox">
+                    <h3>name</h3>
+                    <input type="text" placeholder="Medicine name" name="Medicine">
+                </div>
+                <div class="inputBox">
+                    <h3>how many units</h3>
+                    <input type="text" placeholder="Number of units" name="units">
+                </div>
+                <div class="inputBox">
+                    <h3>Mfg Date</h3>
+                    <input type="date" name="Mfg">
+                </div>
+                <div class="inputBox">
+                    <h3>Exp Date</h3>
+                    <input type="date" name="Exp">
+                </div>
+                <input type="submit" value="Add" class="btn" name="send">
+
+            </form>
+        </div>
+    </section>
+
+
+    <!-- book section end -->
+
+    <!-- packages section start -->
+
+    <section class="packages" id="packages">
+
+        <h1 class="heading">
+            <span>S</span>
+            <span>t</span>
+            <span>o</span>
+            <span>c</span>
+            <span>k</span>
+        </h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="Images/Paracetamol Tablets.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-pills"></i>Paracetamol</h3>
+                    <p>Paracetamol (Panadol, Calpol, Alvedon) is an analgesic and antipyretic drug that is used to temporarily relieve mild-to-moderate pain and fever.<br>Dosage Form: Tablet<br>Quantity: 470<br>Price per Box: ₹ 190<br>Dicount:0.00%<br>Expiry Date: 15 June 2025</p>
+
+                    <a href="payment.html" class="btn" target="_blank">Order Now</a>
+                </div>
+            </div>
+
+
+
+            <div class="box">
+                <img src="Images/Antihistamine.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-pills"></i>Antihistamine</h3>
+                    <p>Antihistamines are medicines often used to relieve symptoms of allergies, such as hay fever, hives, conjunctivitis and reactions to insect bites or stings.<br>Dosage Form: Tablet<br>Quantity: 545<br>Price per Box: ₹ 120<br>Dicount:0.50%<br>Expiry Date: 15 June 2025</p>
+                    <a href="payment.html" class="btn" target="_blank">Order Now</a>
+                </div>
+            </div>
+
+
+
+            <div class="box">
+                <img src="Images/Aspirin.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-pills"></i>Aspirin</h3>
+                    <p>Aspirin is in a group of medications called salicylates. It works by stopping the production of certain natural substances that cause fever, pain, swelling, and blood clots.<br>Dosage Form: Tablet<br>Quantity: 120<br>Price per Box: ₹ 150<br>Dicount:0.80%<br>Expiry Date: 15 June 2025</p>
+                    <a href="payment.html" class="btn" target="_blank">Order Now</a>
+                </div>
+            </div>
+
+
+
+            <div class="box">
+                <img src="Images/Cough Syrup.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-pills"></i>Cough Syrup</h3>
+                    <p>This combination product is used for the temporary relief of cough, sneezing, or runny nose due to the common cold.<br>Dosage Form: Syrup<br>Quantity: 600<br>Price per Box: ₹ 110<br>Dicount:2.00%<br>Expiry Date: 15 June 2025</p>
+                    <a href="payment.html" class="btn" target="_blank">Order Now</a>
+                </div>
+            </div>
+
+
+
+            <div class="box">
+                <img src="Images/Sanitiser.png" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-pills"></i>Sanitizer</h3>
+                    <p> Sanitiser is used to kill bacteria and viruses that are introduced to surfaces both in and on equipment.<br>Dosage Form: Syrup<br>Quantity: 1000<br>Price per Box: ₹220 <br>Dicount:5.00%<br>Expiry Date: 15 June 2025</p>
+                    <a href="payment.html" class="btn" target="_blank">Order Now</a>
+                </div>
+            </div>
+
+
+
+            <div class="box">
+                <img src="Images/PainReliverSpray.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-pills"></i>Pain Relief Spray</h3>
+                    <p>Pain relief spray is a quicker way to relieve joint pain, neck pain, shoulder pain, low back pain, sprain, cramps, and muscular aches.<br>Dosage Form: Syrup<br>Quantity: 100<br>Price per Box: ₹ 250<br>Dicount:0.50%<br>Expiry Date: 15 June 2025</p>
+                    <a href="payment.html" class="btn" target="_blank">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- packages section end -->
+
+    <!-- Services section start -->
+
+    <section class="services" id="services">
+
+        <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fa-regular fa-clipboard"></i>
+                <h3>Electronic Health Records</h3>
+                <p>Implementing and managing digital records of patients' medical history, treatments, medications, and test results. It ensures secure, centralized access to crucial patient information.</p>
+            </div>
+            <div class="box">
+                <i class="fa-brands fa-uncharted"></i>
+                <h3>Practice Management Software</h3>
+                <p>Tools to streamline administrative tasks such as billing, claims processing, and inventory management for medical facilities.</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-globe"></i>
+                <h3>Telemedicine<br>Solutions</h3>
+                <p>Integrating virtual care options for remote consultations, enabling patients to connect with healthcare providers from anywhere, improving accessibility and convenience.</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-chart-simple"></i>
+                <h3>Healthcare<br>Analytics</h3>
+                <p>Utilizing data analysis to identify trends, assess sales, and make informed decisions for better medicine stock and operational efficiency.</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-walkie-talkie"></i>
+                <h3>Interoperability Solutions</h3>
+                <p>Enabling seamless communication and data exchange between different healthcare companies and providers to ensure continuity of stock.</p>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-money-check-dollar"></i>
+                <h3>Revenue Cycle Management</h3>
+                <p>Optimizing financial processes, including insurance claims, billing, and payment collection, to ensure efficient revenue generation and management.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Services section end -->
+
+    <!-- Gallery section start -->
+
+    <section class="gallery" id="gallery">
+
+        <h1 class="heading">
+            <span>S</span>
+            <span>a</span>
+            <span>l</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="Images/gauze-roll-bandages.jpeg" alt="">
+                <div class="content">
+                    <h3>Gauze Bandages<br><i class="fa-solid fa-money-bill-trend-up"></i></h3>
+                    <p>Cost Price: ₹5 per unit<br>Selling Price: ₹9 per unit<br>Sold: 1500 units    </p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="Images/Masks.jpg" alt="">
+                <div class="content">
+                    <h3>Masks <br><i class="fa-solid fa-money-bill-trend-up"></i></h3>
+                    <p>Cost Price: ₹1 per unit<br>Selling Price: ₹9 per unit<br>Sold: 10000 units</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="Images/Eye Drop.jpg" alt="">
+                <div class="content">
+                    <h3>Eye Drop<br><i class="fa-solid fa-money-bill-trend-up"></i></i></h3>
+                    <p>Cost Price: ₹10 per unit<br>Selling Price: ₹30 per unit<br>Sold: 600 units</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="Images/Betadine.png" alt="">
+                <div class="content">
+                    <h3>Antiseptic Ointment<br><i class="fa-solid fa-money-bill-trend-up"></i></h3>
+                    <p>Cost Price: ₹40 per unit<br>Selling Price: ₹80 per unit<br>Sold: 1200 units</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="Images/cotton-roll.jpg" alt="">
+                <div class="content">
+                    <h3>Cotton Roll<br><i class="fa-solid fa-money-bill-trend-up"></i></h3>
+                    <p>Cost Price: ₹6 per unit<br>Selling Price: ₹20 per unit<br>Sold: 50000 units</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="Images/burnol.jpg" alt="">
+                <div class="content">
+                    <h3>Burnol<br><i class="fa-solid fa-money-bill-trend-up"></i></h3>
+                    <p>Cost Price: ₹30 per unit<br>Selling Price: ₹82 per unit<br>Sold: 500s units</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="Images/Dettol.jpg" alt="">
+                <div class="content">
+                    <h3>Antiseptic Liquid<br><i class="fa-solid fa-money-bill-trend-up"></i></h3>
+                    <p>Cost Price: ₹40 per unit<br>Selling Price: ₹120 per unit<br>Sold: 8000 units</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="Images/Thermometer.jpg" alt="">
+                <div class="content">
+                    <h3>Thermometer<br><i class="fa-solid fa-money-bill-trend-up"></i></h3>
+                    <p>Cost Price: ₹150 per unit<br>Selling Price: ₹298 per unit<br>Sold: 400 units</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="Images/Dusting Powder.jpeg" alt="">
+                <div class="content">
+                    <h3>Dusting Powder<br><i class="fa-solid fa-money-bill-trend-up"></i></h3>
+                    <p>Cost Price: ₹23 per unit<br>Selling Price: ₹72 per unit<br>Sold: 2500 units</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="Images/Ice Pack.png" alt="">
+                <div class="content">
+                    <h3>Ice Pack<br><i class="fa-solid fa-money-bill-trend-up"></i></h3>
+                    <p>Cost Price: ₹8 per unit<br>Selling Price: ₹12 per unit<br>Sold: 6000 units</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="Images/Syringe.jpeg" alt="">
+                <div class="content">
+                    <h3>Disposable Syringe<br><i class="fa-solid fa-money-bill-trend-up"></i></h3>
+                    <p>Cost Price: ₹3 per unit<br>Selling Price: ₹15 per unit<br>Sold: 200000 units</p>
+                </div>
+            </div>
+            <div class="box">
+                <img src="Images/Multivitamin Tablet.jpeg" alt="">
+                <div class="content">
+                    <h3>Multivitamin Tablet<br><i class="fa-solid fa-money-bill-trend-up"></i></h3>
+                    <p>Cost Price: ₹20 per unit<br>Selling Price: ₹60 per unit<br>Sold: 500000 units</p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Gallery section end -->
+
+    <!-- Review Section start -->
+
+    <section class="review" id="review">
+
+        <h1 class="heading">
+            <span>S</span>
+            <span>u</span>
+            <span>p</span>
+            <span>p</span>
+            <span>l</span>
+            <span>i</span>
+            <span>e</span>
+            <span>r</span>
+        </h1>
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="Images/Emcure.png" alt="">
+                        <h3>Emcure Pharmaceuticals</h3>
+                        <p> Emcure Pharmaceuticals Limited is an Indian multinational pharmaceutical company headquartered in Pune. Emcure's product portfolio includes tablets, capsules and injectables. The company is a major producer of HIV antivirals, as well as gynaecology and blood therapeutic drugs.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="Images/Cipla.png" alt="">
+                        <h3>Cipla Pharmaceutical</h3>
+                        <p>Cipla Limited is an Indian multinational pharmaceutical company, headquartered in Mumbai. Cipla primarily develops medicines to treat respiratory disease, cardiovascular disease, arthritis, diabetes, depression, and many other medical conditions.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="Images/Piramal.png" alt="">
+                        <h3>Piramal Healthcare</h3>
+                        <p>Piramal is the global leader in delivering customer-centric solutions in the field of Antibody Drug Conjugates (ADCs) and other bioconjugates to global biopharmaceutical companies.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="Images/Mankind.jpeg" alt="">
+                        <h3>Mankind Pharma</h3>
+                        <p> Mankind Pharma is an Indian pharmaceutical and healthcare products company, headquartered in Delhi. The company has products in therapeutic areas ranging from antibiotics, to gastrointestinal, cardiovascular, dermal, and erectile dysfunction medications.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="Images/Sun Pharma.png" alt="">
+                        <h3>Sun Pharmaceutical Industries Ltd.</h3>
+                        <p>Sun Pharmaceutical Industries Limited is an Indian multinational pharmaceutical company headquartered in Mumbai, that manufactures and sells pharmaceutical formulations and active pharmaceutical ingredients in more than 100 countries across the globe.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="Images/zydus.jpeg" alt="">
+                        <h3>Zydus Lifesciences</h3>
+                        <p>Zydus Lifesciences Limited, formerly known as Cadila Healthcare Limited, is an Indian multinational pharmaceutical company headquartered in Ahmedabad, which is primarily engaged in the manufacture of generic drugs. The company ranked 100th in the Fortune India 500 list in 2020.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+    </section>
+
+    <!-- Review Section end -->
+
+    <!-- contect section starts -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading">
+            <span>c</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+        </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="img/contact.jpg" alt="">
+            </div>
+
+            <form action="contact_form.php" method="post" class="contact-form">
+            
+                <div class="inputBox">
+                    <input type="text" placeholder="name">
+                    <input type="email" placeholder="email" name="email">
+                </div>
+                <div class="inputBox">
+                    <input type="number" placeholder="number" name="number">
+                    <input type="text" placeholder="subject" name="subject">
+                </div>
+                <textarea placeholder="message" id="" cols="30" rows="10" name="message"></textarea>
+                <input type="submit" value="send" class="btn" name="send">
+            </form>
+
+        </div>
+    </section>
+
+    <!-- contect section end -->
+
+    <!-- brand section -->
+
+    <section class="brand-container">
+
+        <div class="swiper-container brand-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img/b-4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/b-2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/b-3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/b-4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/b-5.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img/b-6.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section  -->
+
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>About Us</h3>
+                <p>Welcome to MediDoc, where healthcare meets efficiency and excellence. We specialize in providing comprehensive medical management solutions that streamline operations, optimize patient care, and drive positive outcomes for healthcare organizations.</p>
+            </div>
+            <div class="box">
+                <h3>Branch Location</h3>
+                <a href="#">Mumbai</a>
+                <a href="#">Hyderabad</a>
+                <a href="#">Bengaluru</a>
+                <a href="#">Delhi</a>
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#book">Categories</a>
+                <a href="#packages">Stock</a>
+                <a href="#services">Services</a>
+                <a href="#gallery">Sales</a>
+                <a href="#review">Supplier</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/groups/tourtravelagency/">Facebook</a>
+                <a href="https://www.instagram.com/tripbookingkh/">Instagram</a>
+                <a href="https://twitter.com/Trifeteofficial">Twitter</a>
+                <a href="https://www.linkedin.com/in/trip-booking-store-802b4046/?originalSubdomain=mv">Linkedin</a>
+            </div>
+
+        </div>
+
+        <h1 class="credit"> ceated by <span>Nikhil</span>~<span>Jatin</span>~<span>Tanisha</span>~<span>Abhay</span>~<span>Nizamuddin</span>| all rights reserved!</h1>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
